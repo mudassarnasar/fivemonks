@@ -21,7 +21,7 @@
             <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Veg</a>
             <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Non-veg</a>
             <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Soft drinks</a>
-            <a class="nav-item nav-link" id="nav-total-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"  >Total bill</a>
+            <a class="nav-item nav-link" id="nav-total-tab" data-toggle="tab" href="#nav-total" role="tab" aria-controls="nav-total" aria-selected="false" onclick="calculateSum()" >Total bill</a>
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
@@ -40,7 +40,7 @@
                   <tr>
                     <td>
                       <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="customCheck1">
+                          <input type="checkbox" class="custom-control-input" id="vegcheckbox1">
                           <label class="custom-control-label" for="customCheck1">1</label>
                       </div>
                     </td>
@@ -52,7 +52,7 @@
                   <tr>
                     <td>
                       <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="customCheck2">
+                          <input type="checkbox" class="custom-control-input" id="vegcheckbox2">
                           <label class="custom-control-label" for="customCheck2">2</label>
                       </div>
                     </td>
@@ -63,7 +63,7 @@
                   <tr>
                     <td>
                       <div class="custom-control custom-checkbox">
-                          <input type="checkbox" class="custom-control-input" id="customCheck3">
+                          <input type="checkbox" class="custom-control-input" id="vegcheckbox3">
                           <label class="custom-control-label" for="customCheck3">3</label>
                       </div>
                     </td>
@@ -91,7 +91,7 @@
                 <tr>
                   <td>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                        <input type="checkbox" class="custom-control-input" id="nonvegcheckbox1" checked>
                         <label class="custom-control-label" for="customCheck1">1</label>
                     </div>
                   </td>
@@ -103,7 +103,7 @@
                 <tr>
                   <td>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <input type="checkbox" class="custom-control-input" id="nonvegcheckbox2">
                         <label class="custom-control-label" for="customCheck2">2</label>
                     </div>
                   </td>
@@ -114,7 +114,7 @@
                 <tr>
                   <td>
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <input type="checkbox" class="custom-control-input" id="nonvegcheckbox3">
                         <label class="custom-control-label" for="customCheck3">3</label>
                     </div>
                   </td>
@@ -126,6 +126,11 @@
             </table>
           </div>
           <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            some contant
+            
+          </div>
+          <div class="tab-pane fade" id="nav-total" role="tabpanel" aria-labelledby="nav-total-tab">
+            <h2>Total bill : </h2><h2 id="totalbill"></h2>
             
             
           </div>
