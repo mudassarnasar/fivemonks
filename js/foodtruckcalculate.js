@@ -21,6 +21,7 @@ $(document).ready(function () {
       });
 
       $("#price").html(sumTotal);
+      $("#price-bottom").html(sumTotal);
 
    }
 
