@@ -10,11 +10,13 @@ $(document).ready(function () {
          if ($tr.find('input[type="checkbox"]').is(':checked')) {
 
 
-            var $columns = $tr.find('td').next('td').next('td');
+            //var $columns = $tr.find('td').next('td').next('td');
+            var $columns = $tr.find('label');
 
             var $Qnty = parseInt($tr.find('input[type="text"]').val());
 
-            var $Cost = parseInt($columns.next('td').html());
+            //var $Cost = parseInt($columns.next('td').html());
+            var $Cost = parseInt($columns.html());
 
             sumTotal += $Qnty * $Cost;
          }
